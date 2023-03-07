@@ -1,0 +1,256 @@
+:root {
+  --dark-gray: #24282b;
+  --emerald: rgb(9, 155, 43); 
+  --egg: rgb(223, 223, 195);
+  --brown: #84581683; 
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--egg);
+  font-family: 'Segoe UI', Helvetica,
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+header,
+footer
+  {
+  min-height:50px;
+  padding-block: 20px;
+  background-color: var(--dark-gray);
+}
+
+header h1,
+footer h2 {
+  font-size: 40px;
+  color: var(--egg);
+}
+
+h1 {
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: var(--egg);  
+  border-radius: 0px 40px 40px 0px;
+  border-left-style: none;
+  background-color: var(--brown);
+  padding: 20px;
+  text-align: left;
+  margin-left: 0px;
+   margin-right: 470px;
+}
+
+header nav ul,
+footer div ul {
+  list-style-type: none;
+}
+
+header nav ul li,
+footer div ul li 
+{
+    float: right;
+    font-size: 22.5px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: var(--egg);
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--brown);
+    padding: 10px;
+    margin: 10px;
+}
+
+header nav ul li a,
+footer div ul li a {
+  text-decoration: none;
+  color: var(--egg);
+} 
+
+header nav ul li a:hover,
+footer div ul li a:hover 
+  {
+  text-decoration: none;
+  color: var(--emerald);
+}
+
+header nav ul li a:active,
+footer div ul li a :active
+  {
+  text-decoration: none;
+  color: var(--brown);
+}
+
+
+img {
+  min-width: max-content;
+  max-height: 200px;
+  margin: 0%;
+  padding: 0%;
+
+}
+
+header nav ul img {
+  width: 10px;
+
+}
+
+/* section { 
+  flex:1; 
+} */
+
+/* section h2 {
+  font-size: 40px;
+  color: var(--brown);
+  font-weight: 400;
+} */
+
+/* footer {
+  min-height:50px;
+  padding-block: 20px;
+  background-color: var(--dark-gray);
+} */
+
+h2 {
+  border-style: solid;
+  border-width: 2.5px;
+  border-color: var(--egg);  
+  border-radius: 0px 40px 40px 0px;
+  border-left-style: none;
+  background-color: var(--brown);
+  padding: 20px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.header,
+.footer,
+.container {
+display: flex;
+justify-content: flex-end;
+align-items: baseline;
+}
+
+.card {
+  flex: 1;
+  align-items: flex-start;
+}
+
+/* flex containers for body section */
+
+/* .main-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+} */
+
+
+/* .main-1 article {
+  padding: 10px;
+  margin-right: auto;
+} */
+
+/* .content-1 {
+  flex: 1;
+  order: 1;
+}
+
+.content-2 {
+  flex: 1;
+  order: 2;
+} */
+
+.sections {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 10px 0;
+  }
+  
+  .sections h2 {
+    flex: 0 0 10%;
+    border-right: 5px var(--brown) solid;
+    text-align: right;
+    padding-right: 15px;
+    /* padding: 10px;
+    margin-right: auto;
+    align-items: baseline; */
+  }
+
+  .sections div {
+    flex: 0 0 77%
+  }
+/* 
+  .sections h2 {
+    flex: 0 0 100%;
+  }
+
+  .sections div {
+    flex: 0 0 100%;
+  } */
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-block-end: auto;
+  }
+
+  .img-container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-item {
+    max-height: 150px;
+    min-height: 150px;
+    border: 5px solid black;
+    padding: 0 0 20px 0;
+    /* flex-basis: calc(50% - 1em); */
+    display: flex;
+    align-items: flex-end;
+    margin: 0.5em;
+  }
+
+  .img-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+  }
+
+  .img-item div {
+    padding: 8px 10px
+  }
+
+  .img-item h2 {
+    font-size: 1.6rem;
+  }
+
+  .img-1 {
+    /* width: 100%;
+    height: 100%; */
+    background-image: url("./images/Photo\ Feb\ 12\ 2023\,\ 2\ 19\ 18\ PM.jpg");
+  }
+
+  .img-2 {
+    /* width: 100%;
+    height: 100%; */
+    background-image: url("./images//pexels-pixabay-269399.jpg");
+  }
+
+  .img-3 {
+    /* width: 100%;
+    height: 100%; */
+    background-image: url("./images/Screenshot\ 2023-03-06\ 170035.png");
+  }
